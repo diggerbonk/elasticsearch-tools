@@ -7,8 +7,9 @@ async function main(args) {
     let indexStr = args[2];
     let rootPath = args[3];
 
-    let indexInfo = await client.indices.get({index: 'homestead'});
+    let indexInfo = await client.indices.get({index: indexStr});
 
+    console.log(indexInfo);
     fs.writeFileSync(rootPath + "/mappings.json", JSON.stringify(indexInfo.body[indexStr].mappings, null, 2));
 
     let searchParams = {
