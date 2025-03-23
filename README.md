@@ -1,7 +1,7 @@
 # elasticsearch-tools
 
-## get-all.js
+    # dump.js
 
-$ node dump.js <index> <backupDirectory>
+    node dump.js <index> <backupDirectory>
 
-Retrieves all documents from an index and makes a local backup. Results are broken into subdirectories of 100 files each. Each file contains a paged result set.
+    # Retrieves all documents from an index and makes a local backup. Results are broken into subdirectories of 100 files each. Each file contains a paged result set.
